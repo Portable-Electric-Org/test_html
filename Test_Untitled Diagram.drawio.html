@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Animated Diagram</title>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8">
+  <title>Animated Draw.io Diagram</title>
   <style>
-    path[stroke-dasharray] {
-      animation: dashMove 2s linear infinite;
-    }
-
-    @keyframes dashMove {
+    @keyframes dash-anim {
       to {
         stroke-dashoffset: -1000;
       }
     }
+
+    .animated-dash {
+      stroke-dasharray: 8 8 !important;
+      stroke-dashoffset: 0;
+      animation: dash-anim 10s linear infinite;
+    }
   </style>
 </head>
 <body>
-  <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;dark-mode&quot;:&quot;auto&quot;,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; agent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36\&quot; version=\&quot;26.2.2\&quot;&gt;\n  &lt;diagram name=\&quot;Page-1\&quot; id=\&quot;MQUkvyKytPhUNLFfEQgr\&quot;&gt;\n    &lt;mxGraphModel dx=\&quot;1092\&quot; dy=\&quot;833\&quot; grid=\&quot;1\&quot; gridSize=\&quot;10\&quot; guides=\&quot;1\&quot; tooltips=\&quot;1\&quot; connect=\&quot;1\&quot; arrows=\&quot;1\&quot; fold=\&quot;1\&quot; page=\&quot;1\&quot; pageScale=\&quot;1\&quot; pageWidth=\&quot;1169\&quot; pageHeight=\&quot;827\&quot; math=\&quot;0\&quot; shadow=\&quot;0\&quot;&gt;\n      &lt;root&gt;\n        &lt;mxCell id=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;1\&quot; parent=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;lDGzpwiRP8x3SUWPKlhj-1\&quot; value=\&quot;data\&quot; style=\&quot;rounded=0;whiteSpace=wrap;html=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;320\&quot; y=\&quot;140\&quot; width=\&quot;120\&quot; height=\&quot;60\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;lDGzpwiRP8x3SUWPKlhj-2\&quot; value=\&quot;sd card\&quot; style=\&quot;strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;520\&quot; y=\&quot;350\&quot; width=\&quot;100\&quot; height=\&quot;60\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;lDGzpwiRP8x3SUWPKlhj-3\&quot; style=\&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;flowAnimation=0;dashed=1;dashPattern=8 8;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot; source=\&quot;lDGzpwiRP8x3SUWPKlhj-1\&quot; target=\&quot;lDGzpwiRP8x3SUWPKlhj-2\&quot;&gt;\n          &lt;mxGeometry relative=\&quot;1\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n      &lt;/root&gt;\n    &lt;/mxGraphModel&gt;\n  &lt;/diagram&gt;\n&lt;/mxfile&gt;\n&quot;}"></div>
-  <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+  <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;, &quot;nav&quot;:true, &quot;resize&quot;:true, &quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;, &quot;edit&quot;:&quot;_blank&quot;, &quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; agent=\&quot;Mozilla/5.0\&quot; version=\&quot;26.2.2\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;id\&quot;&gt;&lt;mxGraphModel dx=\&quot;1092\&quot; dy=\&quot;833\&quot; grid=\&quot;1\&quot; gridSize=\&quot;10\&quot; guides=\&quot;1\&quot; tooltips=\&quot;1\&quot; connect=\&quot;1\&quot; arrows=\&quot;1\&quot; fold=\&quot;1\&quot; page=\&quot;1\&quot; pageScale=\&quot;1\&quot; pageWidth=\&quot;1169\&quot; pageHeight=\&quot;827\&quot; math=\&quot;0\&quot; shadow=\&quot;0\&quot;&gt;&lt;root&gt;&lt;mxCell id=\&quot;0\&quot;/&gt;&lt;mxCell id=\&quot;1\&quot; parent=\&quot;0\&quot;/&gt;&lt;mxCell id=\&quot;data\&quot; value=\&quot;data\&quot; style=\&quot;rounded=0;whiteSpace=wrap;html=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;&lt;mxGeometry x=\&quot;320\&quot; y=\&quot;140\&quot; width=\&quot;120\&quot; height=\&quot;60\&quot; as=\&quot;geometry\&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;sdcard\&quot; value=\&quot;sd card\&quot; style=\&quot;strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;&lt;mxGeometry x=\&quot;520\&quot; y=\&quot;350\&quot; width=\&quot;100\&quot; height=\&quot;60\&quot; as=\&quot;geometry\&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;edge\&quot; style=\&quot;edgeStyle=orthogonalEdgeStyle;dashed=1;dashPattern=8 8;html=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot; source=\&quot;data\&quot; target=\&quot;sdcard\&quot;&gt;&lt;mxGeometry relative=\&quot;1\&quot; as=\&quot;geometry\&quot;/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+
+  <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+
+  <script>
+    const observer = new MutationObserver(() => {
+      const dashedPaths = document.querySelectorAll('svg path[stroke-dasharray]');
+      dashedPaths.forEach(path => {
+        if (path.getAttribute('stroke-dasharray') !== 'none') {
+          path.classList.add('animated-dash');
+        }
+      });
+      observer.disconnect();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  </script>
 </body>
 </html>
